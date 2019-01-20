@@ -10,12 +10,12 @@ var wallet = new TurtleService({
   saveInterval: 10, // issue an automatic save request every x seconds as long as the wallet is synced
   scanInterval: 5, // scan the wallet for new transactions every x seconds as long as the wallet is synced
   timeout: 2000, // consider RPC calls timed out after x milliseconds
-  path: './turtle-service', // the path to the turtle-service binary
+  path: './obscure-service', // the path to the turtle-service binary
   enableWebSocket: true, // enable the WebSocket server at bindPort + 1
 
   // Standard turtle-service options start here
   config: false, // the path to a turtle-service config file -- if you so choose
-  bindAddress: '127.0.0.1', // The IP address that turtle-service will bind to
+  bindAddress: '0.0.0.0', // The IP address that turtle-service will bind to
   bindPort: 8070, // The port that turtle-service will bind to
   rpcPassword: 'x9098bc', // You really should use an RPC password
   rpcLegacySecurity: false, // Turning this to true, removes the requirement for a RPC password, either rpcPassword or rpcLegacySecurity MUST be set
@@ -24,7 +24,7 @@ var wallet = new TurtleService({
   logFile: false, // The path to the log file you would like turtle-service to keep
   logLevel: 4, // The log level to use with turtle-service
   syncFromZero: false, // If set to true, will tell turtle-service to always sync the container from zero.
-  daemonRpcAddress: '127.0.0.1', // Daemon RPC IP Address (if your daemon doesn't use 127.0.0.1 or 0.0.0.0 -- you really need to change this)
+  daemonRpcAddress: '0.0.0.0', // Daemon RPC IP Address (if your daemon doesn't use 127.0.0.1 or 0.0.0.0 -- you really need to change this)
   daemonRpcPort: 11898, // Daemon RPC port
 
   // RPC API default values
