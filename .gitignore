@@ -130,7 +130,7 @@ Temporary Items
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/dictionaries
-
+.obscure-service
 # Sensitive or high-churn files:
 .idea/**/dataSources/
 .idea/**/dataSources.ids
