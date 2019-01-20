@@ -17,7 +17,7 @@ var wallet = new TurtleService({
   config: false, // the path to a turtle-service config file -- if you so choose
   bindAddress: '0.0.0.0', // The IP address that turtle-service will bind to
   bindPort: 8070, // The port that turtle-service will bind to
-  rpcPassword: 'x9098bc', // You really should use an RPC password
+  rpcPassword: 'password', // You really should use an RPC password
   rpcLegacySecurity: false, // Turning this to true, removes the requirement for a RPC password, either rpcPassword or rpcLegacySecurity MUST be set
   containerFile: './container.walletd', // The path to your turtle-service container file
   containerPassword: 'password', // The password to your turtle-service container file
