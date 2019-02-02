@@ -170,3 +170,6 @@ data/
 *.walletd
 *.walletd.*
 *.exe
+*.wallet
+
+obscure-service
