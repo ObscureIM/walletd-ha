@@ -16,7 +16,7 @@ var wallet = new TurtleService({
   // Standard turtle-service options start here
   config: false, // the path to a turtle-service config file -- if you so choose
   bindAddress: '127.0.0.1', // The IP address that turtle-service will bind to
-  bindPort: 8070, // The port that turtle-service will bind to
+  bindPort: 10071, // The port that turtle-service will bind to
   rpcPassword: 'password', // You really should use an RPC password
   rpcLegacySecurity: false, // Turning this to true, removes the requirement for a RPC password, either rpcPassword or rpcLegacySecurity MUST be set
   containerFile: './container.walletd', // The path to your turtle-service container file
@@ -25,10 +25,10 @@ var wallet = new TurtleService({
   logLevel: 4, // The log level to use with turtle-service
   syncFromZero: false, // If set to true, will tell turtle-service to always sync the container from zero.
   daemonRpcAddress: '0.0.0.0', // Daemon RPC IP Address (if your daemon doesn't use 127.0.0.1 or 0.0.0.0 -- you really need to change this)
-  daemonRpcPort: 11898, // Daemon RPC port
+  daemonRpcPort: 11002, // Daemon RPC port
 
   // RPC API default values
-  defaultMixin: 3, // the default mixin to use for transactions
+  defaultMixin: 0, // the default mixin to use for transactions
   defaultFee: 0.1, // the default transaction fee for transactions
   defaultBlockCount: 1, // the default number of blocks when blockCount is required
   decimalDivisor: 100000000, // Currency has many decimal places?
