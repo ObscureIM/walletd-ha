@@ -33,10 +33,10 @@ It also provides *easy access* to the Obsidian-service RPC API via native [Javas
 You *must* copy Obsidian-service into the ```walletd-ha``` folder for the easy start process to occur.
 
 ```text
-git clone https://github.com/ObsidianProtocol/walletd-ha.git
-cd turtleservice-ha
-cp <Obsidian-service> .
-./Obsidian-service -g -w container.walletd
+git clone https://github.com/ObscureIM/walletd-ha.git
+cd walletd-ha
+cp <obscure-service> .
+./obscure-service -g -w container.walletd
 npm install & node service.js
 ```
 
