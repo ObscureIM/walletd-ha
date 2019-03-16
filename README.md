@@ -30,13 +30,13 @@ It also provides *easy access* to the Obsidian-service RPC API via native [Javas
 
 ## Easy Start
 
-You *must* copy Obsidian-service into the ```walletd-ha``` folder for the easy start process to occur.
+You *must* copy obscure-service into the ```walletd-ha``` folder for the easy start process to occur.
 
 ```text
 git clone https://github.com/ObscureIM/walletd-ha.git
 cd walletd-ha
 cp <obscure-service> .
-./obscure-service -g -w container.walletd
+./obscure-service -w container.walletd -p yourpassword -g
 npm install & node service.js
 ```
 
@@ -52,7 +52,7 @@ npm install -g pm2
 pm2 startup
 pm2 install pm2-logrotate
 
-pm2 start service.js --watch --name turtleservice
+pm2 start service.js
 pm2 save
 ```
 
