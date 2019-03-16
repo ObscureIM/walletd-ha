@@ -72,13 +72,13 @@ var wallet = new TurtleService({
   saveInterval: 10, // issue an automatic save request every x seconds as long as the wallet is synced
   scanInterval: 5, // scan the wallet for new transactions every x seconds as long as the wallet is synced
   timeout: 2000, // consider RPC calls timed out after x milliseconds
-  path: './Obsidian-service.exe', // the path to the Obsidian-service binary
+  path: './obscure-service.exe', // the path to the Obsidian-service binary
   enableWebSocket: true, // enable the WebSocket server at bindPort + 1
 
   // Standard Obsidian-service options start here
   config: false, // the path to a Obsidian-service config file -- if you so choose
   bindAddress: '127.0.0.1', // The IP address that Obsidian-service will bind to
-  bindPort: 8070, // The port that Obsidian-service will bind to
+  bindPort: 10071, // The port that Obsidian-service will bind to
   rpcPassword: false, // You really should use an RPC password
   rpcLegacySecurity: false, // Turning this to true, removes the requirement for a RPC password, either rpcPassword or rpcLegacySecurity MUST be set
   containerFile: false, // The path to your Obsidian-service container file
@@ -87,7 +87,7 @@ var wallet = new TurtleService({
   logLevel: 4, // The log level to use with Obsidian-service
   syncFromZero: false, // If set to true, will tell Obsidian-service to always sync the container from zero.
   daemonRpcAddress: '127.0.0.1', // Daemon RPC IP Address (if your daemon doesn't use 127.0.0.1 or 0.0.0.0 -- you really need to change this)
-  daemonRpcPort: 11898, // Daemon RPC port
+  daemonRpcPort: 11002, // Daemon RPC port
 
   // RPC API default values
   defaultMixin: 3, // the default mixin to use for transactions
